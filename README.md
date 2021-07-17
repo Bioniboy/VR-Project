@@ -1,1 +1,8 @@
-# We’re going to make a VR game. This will involve learning technology in C#, Unity, and Blender. We’ll learn how to port it to both Steam VR and Quest. This will be a good opportunity to learn to work with a fairly new technology. Our starting idea for a project is to make a card game simulator, where you’ll have cards in one hand, and with the other you’ll be able to pick specific ones up and put them down in place on the table. We’re considering using one of the last sprints to learn to implement multiplayer.
+Welcome to our VR Project, called Sandman: Protector of Dreams. In it, you use magic and a sword in order to defeat nightmares. If enough nightmares get past, you lose. 
+
+Hit enemies with your sword to knock them back. Pick up the little blue orb next to you and hold trigger to shoot a laser blast. You get one point for defeating the little enemies, and 3 points for the big ones. You can see your score on the hilt of your sword.
+
+Created by:
+Matthew Larson
+Jacob South
+Brandon Price
