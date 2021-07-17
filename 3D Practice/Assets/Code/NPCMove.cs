@@ -6,22 +6,33 @@ using UnityEngine.AI;
 
 public class NPCMove : MonoBehaviour
 {
-    public List<Transform> _destination;
+    public List<GameObject> enemies;
 
     NavMeshAgent _navMeshAgent;
-    int targetIndex;
+    GameObject target = null;
 
 
     // Start is called before the first frame update
     void Start()
     {
         _navMeshAgent = this.GetComponent<NavMeshAgent>();
-        targetIndex = 0;
+        //targetIndex = 0;
     }
 
 
     void Update()
     {
+        if (target is null)
+        {
+            target = findClosestEnemy(enemies);
+        }
+        if (target != null)
+        {
+            _navMeshAgent.SetDestination(target.transform.position);
+        }
+        
+
+        /*
         Vector3 targetVector = _destination[targetIndex].transform.position;
         _navMeshAgent.SetDestination(targetVector);
         if (Input.GetKeyDown(KeyCode.Space))
@@ -34,6 +45,35 @@ public class NPCMove : MonoBehaviour
                 targetIndex = 0;
             }
             
+        }
+        */
+    }
+
+    GameObject findClosestEnemy(List<GameObject> enemies)
+    {
+        GameObject nearestEnemy = null;
+        float minDistance = Mathf.Infinity;
+        Vector3 currPos = transform.position;
+        foreach (GameObject enemy in enemies)
+        {
+            if (enemy.activeSelf)
+            {
+                float distance = Vector3.Distance(enemy.transform.position, currPos);
+                if (distance < minDistance)
+                {
+                    nearestEnemy = enemy;
+                    minDistance = distance;
+                }
+            }
+        }
+        return nearestEnemy;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.SetActive(false);
+        if (other.gameObject == target)
+        {
+            target = null;
         }
     }
 }

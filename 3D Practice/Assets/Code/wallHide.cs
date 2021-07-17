@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class wallHide : MonoBehaviour
 {
+    GameObject wall;
     private bool toggle = false;
     void Start()
     {
-// this.gameObject.SetActive(false);
+        wall = GameObject.Find("Toggle-Wall");
+        wall.SetActive(false);
     }
 
     void Update()
     {
-        this.gameObject.SetActive(true);
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (toggle == true)
             {
-                this.gameObject.SetActive(false);
+                wall.SetActive(false);
                 toggle = false;
             } else
             {
-                this.gameObject.SetActive(true);
+                wall.SetActive(true);
                 toggle = true;
             }
         }

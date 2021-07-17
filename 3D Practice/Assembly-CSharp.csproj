@@ -65,33 +65,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\NPCMove.cs" />
+    <Compile Include="Assets\Code\enemyCollision.cs" />
     <Compile Include="Assets\Code\wallHide.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/bioni/Documents/Unity/3D Practice/3D Practice/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/bioni/OneDrive/Documents/GitHub/VR-Project/3D Practice/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 47227603}
   - component: {fileID: 47227602}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,12 +224,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47227601}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.18, y: 1.67, z: -1.64}
-  m_LocalScale: {x: 18.07395, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.18, y: 1.67, z: -1.6400001}
+  m_LocalScale: {x: 10.896061, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452829406
 GameObject:
@@ -245,8 +245,8 @@ GameObject:
   - component: {fileID: 452829409}
   - component: {fileID: 452829408}
   m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_Name: Sphere 2
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,11 +352,11 @@ GameObject:
   - component: {fileID: 507449749}
   - component: {fileID: 507449753}
   - component: {fileID: 507449752}
-  - component: {fileID: 507449751}
   - component: {fileID: 507449750}
+  - component: {fileID: 507449751}
   m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_Name: Sphere 3
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,18 +391,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &507449751
-SphereCollider:
+--- !u!65 &507449751
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507449748}
-  m_Material: {fileID: 13400000, guid: 37a2703e873d02740861d86320c753ab, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &507449752
 MeshRenderer:
@@ -559,8 +559,8 @@ GameObject:
   - component: {fileID: 1229701594}
   - component: {fileID: 1229701593}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
+  m_Name: Sphere 1
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -668,9 +668,8 @@ GameObject:
   - component: {fileID: 1395807866}
   - component: {fileID: 1395807865}
   - component: {fileID: 1395807864}
-  - component: {fileID: 1395807869}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Toggle-Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,20 +763,8 @@ Transform:
   m_LocalScale: {x: 9.583726, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -79.513, z: 0}
---- !u!114 &1395807869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1395807863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a204e7421c2d67447803fb8375715935, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1735346201
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +776,7 @@ GameObject:
   - component: {fileID: 1735346204}
   - component: {fileID: 1735346203}
   - component: {fileID: 1735346202}
+  - component: {fileID: 1735346205}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -861,6 +849,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 22.156, y: 0, z: 0}
+--- !u!114 &1735346205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735346201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a204e7421c2d67447803fb8375715935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1799280767
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +913,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799280767}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -995,8 +995,6 @@ MonoBehaviour:
   - {fileID: 1229701597}
   - {fileID: 452829407}
   - {fileID: 507449749}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!54 &1799280774
 Rigidbody:
   m_ObjectHideFlags: 0
