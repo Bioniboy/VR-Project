@@ -11,4 +11,4 @@ Hit enemies with your sword to knock them back. Pick up the little blue orb next
 
 ### Video presentation:
 
-https://www.youtube.com/watch?v=QG3uM2iQiVo&ab_channel=BrandonPrice
+https://youtu.be/QG3uM2iQiVo
